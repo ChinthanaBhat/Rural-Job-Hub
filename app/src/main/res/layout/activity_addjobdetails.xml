@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ADD_JOB_DETAILS"
+            android:textSize="40sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/title"
+            android:hint="@string/TITLE"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/description"
+            android:hint="@string/DESCRIPTION"
+            android:layout_marginTop="10dp"
+            android:maxLength="50"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/funds"
+            android:hint="@string/FUNDS"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/req_labourers"
+            android:hint="@string/LABOURERS_REQUIRED"
+            android:inputType="numberSigned"
+            android:layout_marginTop="10dp"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/duration"
+            android:hint="@string/DURATION"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_margin="50dp"
+            android:onClick="addJob"
+            android:text="@string/ADD"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/PRADHAN_HOME"
+            android:textSize="40sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sarpanch" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+
+                android:textColor="@color/primary_text"
+                android:id="@+id/approvelabourer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:checked="true"
+                android:text="@string/APPORVE_LABOURER"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:textColor="@color/primary_text"
+                android:id="@+id/issuejobcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ISSUE_JOB_CARD"
+                android:textSize="20sp"
+                android:buttonTint="@color/colorAccent"
+
+                android:textStyle="bold" />
+
+
+
+
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+
+                android:textColor="@color/primary_text"
+                android:id="@+id/assignSewak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ASSIGN_ROZGAR_SEWAK"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+
+                android:textColor="@color/primary_text"
+                android:id="@+id/addjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ADD_JOB_DETAILS"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+
+                android:textColor="@color/primary_text"
+                android:id="@+id/addfieldinspector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Add Field Inspector"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:textColor="@color/primary_text"
+                android:id="@+id/viewFieldinpector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/VIEW_FIELDINPECTOR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/colorAccent"/>
+
+            <RadioButton
+                android:textColor="@color/primary_text"
+                android:id="@+id/deleteFieldinpector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/DELETE_FIELDINPECTOR"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/colorAccent"/>
+            <RadioButton
+                android:textColor="@color/primary_text"
+                android:id="@+id/viewWorkProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/VIEW_WORKPROGRESS"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/colorAccent"/>
+            <RadioButton
+                android:textColor="@color/primary_text"
+                android:id="@+id/viewIssuesFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/VIEW_ISSUES_FEEDBACK"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:buttonTint="@color/colorAccent"/>
+
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="10dp"
+            android:onClick="next"
+            android:text="@string/NEXT"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/PRADHAN_LOGIN"
+            android:textSize="40sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/sarpanch" />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/USERNAME"
+            android:textSize="20sp"
+            android:textColorHint="@color/primary_text"
+            android:textColor="@color/primary_text"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/PASSWORD"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/primary_text"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"/>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_selector"
+                android:onClick="login"
+                android:text="@string/LOGIN"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                style="@style/ButtonStyle"
+                android:layout_margin="10dp"
+                />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

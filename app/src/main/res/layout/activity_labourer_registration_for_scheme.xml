@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/REGISTER_FOR_SCHEME"
+            android:textSize="40sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/labourer"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/adharID"
+            android:hint="@string/AADHARID"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/bplno"
+            android:hint="@string/BPL_CARD"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/voterid"
+            android:hint="@string/VOTER_ID"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="10dp"
+            android:onClick="submit"
+            android:text="@string/SUBMIT"
+
+            />
+    </LinearLayout>
+</ScrollView>

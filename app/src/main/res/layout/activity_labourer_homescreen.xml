@@ -1,0 +1,109 @@
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+   >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/LABOURER_HOME"
+        android:textSize="40sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/labourer" />
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/primary_text"
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:checked="true"
+            android:text="@string/REGISTER_FOR_SCHEME"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:buttonTint="@color/colorAccent"
+
+            android:textColor="@color/primary_text"
+            android:id="@+id/demand_for_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/DEMAND_FOR_JOB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/primary_text"
+            android:id="@+id/generateQRCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/GENERATE_QR_CODE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/primary_text"
+            android:id="@+id/view_job_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/VIEW_JOB_CARD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/primary_text"
+            android:id="@+id/upload_proof_photos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/UPLOAD_PROOF_PHOTOS"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        android:onClick="next"
+        android:text="@string/NEXT"
+
+        />
+
+</LinearLayout>
+    </ScrollView>

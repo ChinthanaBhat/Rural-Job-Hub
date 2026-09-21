@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.project">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".utility.AppInstance"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activitycontrollers.pradhan.DeleteFieldInspectorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.pradhan.ViewFieldInspectorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.fieldinspector.MarkAttendanceActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.fieldinspector.RaiseIssueAndFeedbackActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.fieldinspector.InspectWorkProgressActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.pradhan.ViewWorkProgressActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.pradhan.ViewIssuesFeedbackActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.fieldinspector.FieldinspectorHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.fieldinspector.FieldInspectorLoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.pradhan.AddFieldInspectorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activitycontrollers.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitycontrollers.rozgarsewak.ScanJobCardActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            tools:replace="android:screenOrientation" />
+        <activity android:name=".activitycontrollers.UserSelectionActivity" />
+        <activity android:name=".activitycontrollers.pradhan.PradhanLoginActivity" />
+        <activity android:name=".activitycontrollers.pradhan.PradhanHomeActivity" />
+        <activity android:name=".activitycontrollers.pradhan.AdminChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.RozgarSewakLoginActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.RozgarSewakHomeActivity" />
+        <activity android:name=".activitycontrollers.labourer.LabourerSignupActivity" />
+        <activity android:name=".activitycontrollers.labourer.LabourerLoginActivity" />
+        <activity android:name=".activitycontrollers.labourer.LabourerHomeActivity" />
+        <activity android:name=".activitycontrollers.pradhan.AddRozgarSewakActivity" />
+        <activity android:name=".activitycontrollers.pradhan.ApproveLabourerActivity" />
+        <activity android:name=".activitycontrollers.pradhan.ApproveLabourerListActivity" />
+        <activity android:name=".activitycontrollers.pradhan.AddJobActivity" />
+        <activity android:name=".activitycontrollers.pradhan.IssueJobCardActivity" />
+        <activity android:name=".activitycontrollers.pradhan.LabourerDetailsActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.AddLabourerActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.MakePaymentActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.ViewQRCodeDetails" />
+        <activity android:name=".activitycontrollers.rozgarsewak.PaymentDetailsActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.ChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.MarkAttendanceActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.ViewJobsActivity" />
+        <activity android:name=".activitycontrollers.labourer.RegisterForSchemeActivity" />
+        <activity android:name=".activitycontrollers.labourer.DemandForJobActivity" />
+        <activity android:name=".activitycontrollers.labourer.ViewJobCardActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.AllotLabourersActivity" />
+        <activity android:name=".activitycontrollers.labourer.GenerateQRCodeActivity" />
+        <activity android:name=".activitycontrollers.labourer.ChangePasswordActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.ViewAttendanceActivity" />
+        <activity android:name=".activitycontrollers.labourer.UploadProofPhotosActivity" />
+        <activity android:name=".activitycontrollers.rozgarsewak.ViewProofPhotosActivity" />
+    </application>
+
+</manifest>

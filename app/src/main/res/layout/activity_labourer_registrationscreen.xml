@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/REGISTER"
+            android:textSize="40sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/labourer"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/name"
+            android:hint="@string/NAME"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/userName"
+            android:hint="@string/USERNAME"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/password"
+            android:hint="@string/PASSWORD"
+            android:inputType="textPassword"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/mobile"
+            android:hint="@string/CONTACT"
+            android:inputType="phone"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/age"
+            android:hint="@string/AGE"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/panchayath"
+            android:hint="@string/GRAM_PANCHAYATH"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/bank"
+            android:hint="@string/BANK"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/ifsc"
+            android:hint="@string/IFSC"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/account"
+            android:hint="@string/ACCOUNT"
+            android:inputType="text"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/GENDER"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:textColor="@color/primary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/gender"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp">
+
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:text="@string/MALE"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/FEMALE"
+                    android:textSize="16sp"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/UnderlineStyle" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Photo:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/PROFILE_PICTURE"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:onClick="selectPhoto"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/image"/>
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_margin="50dp"
+            android:onClick="register"
+            android:text="@string/REGISTER"
+            />
+
+    </LinearLayout>
+</ScrollView>

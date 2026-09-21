@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LABOURER_DETAILS"
+            android:textColor="@color/primary_text"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/applogo"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/profile"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/NAME"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    />
+
+            </TableRow>
+
+
+
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/MOBILE_NO"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mobile"
+                    android:textColor="@color/primary_text"
+                    android:textSize="16sp"
+                    />
+            </TableRow>
+        </TableLayout>
+
+<LinearLayout
+    style="@style/UnderlineStyle"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/primary_text"
+            android:id="@+id/amount"
+            android:hint="@string/ENTER_AMOUNT"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/SELECT_DATE"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:textColorHint="@color/primary_text"
+            android:onClick="selectDate"
+            android:clickable="true"
+            android:id="@+id/date"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="@color/primary_text"
+            />
+        <LinearLayout
+            style="@style/UnderlineStyle"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="50dp"
+            android:onClick="makePayment"
+            android:text="@string/MAKE_PAYMENT"
+            />
+
+    </LinearLayout>
+</ScrollView>

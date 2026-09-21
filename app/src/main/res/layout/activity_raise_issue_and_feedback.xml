@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="20dp"
+    tools:context=".activitycontrollers.fieldinspector.RaiseIssueAndFeedbackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ISSUES AND FEEDBACK"
+        android:textSize="40sp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/feedback" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/SELECT_JOB"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/primary_text"
+        />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/joblist"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <LinearLayout style="@style/LinearLayoutStyle" />
+
+
+
+    <EditText
+        android:id="@+id/issue_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:hint="Describe the issue or feedback"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:onClick="submit"
+        android:text="@string/SUBMIT"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        style="@style/ButtonStyle"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
+</ScrollView>

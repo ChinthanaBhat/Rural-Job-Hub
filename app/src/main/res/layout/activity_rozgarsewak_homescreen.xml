@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/ROZGARSEWAK_HOME"
+            android:textSize="30sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sewak" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/addlabourer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:checked="true"
+                android:text="@string/ADD_LABOURER"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/viewjobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:checked="true"
+                android:text="@string/VIEW_JOBS"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/scanjobcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/SCAN_JOBCARD"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/allotment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/ALLOT_LABOURERS"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/MAKE_PAYMENT"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+            <RadioButton
+                android:buttonTint="@color/colorAccent"
+                android:textColor="@color/primary_text"
+                android:id="@+id/viewAttendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/VIEW_ATTENDANCE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_marginTop="10dp"
+            android:onClick="next"
+            android:text="@string/NEXT"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

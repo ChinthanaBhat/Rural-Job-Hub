@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="20dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DEMAND_FOR_JOB"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/JOB_RULES"
+        android:textSize="18sp"
+        android:justificationMode="inter_word"
+        android:textColor="@color/primary_text"
+        android:layout_marginTop="20dp"
+        />
+
+    <CheckBox
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AGREE"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_marginTop="10dp"
+        android:onClick="submit"
+        android:text="@string/SUBMIT"
+
+        />
+
+
+</LinearLayout>
